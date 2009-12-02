@@ -20,6 +20,6 @@ get "/admin" do
    <a href=\"/list\">List of Customers</a>"
 end
 
-get "/list" do
+get "/admin/list" do
   hotel.all.map{|c| c.name}.join("<br>")
 end
